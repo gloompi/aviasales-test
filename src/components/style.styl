@@ -1,0 +1,33 @@
+@import '../assets/styles/main'
+
+.tabs__list
+  display flex
+  align-items center 
+  justify-content space-between
+  width 391px
+  height 32px
+  border: 1px solid $stroke
+  border-left none solid #000
+  border-radius: 5px
+  margin-bottom 44.4px
+  overflow hidden
+
+.tabs__item
+  width 25%
+  height 100% 
+  border-left: 1px solid $stroke
+  &:first-child
+    border-left none
+
+.tabs__btn
+  font-size 14px
+  display flex
+  align-items center
+  justify-content center
+  width 100%
+  height 100%
+  color $primary-txt
+  line-height 20px
+  &.active
+    color $white
+    background-color $blue

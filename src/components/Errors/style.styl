@@ -1,0 +1,97 @@
+@import '../../assets/styles/main'
+
+.error__container
+  width 100%
+  margin-bottom 44.4px
+
+.errors__list
+  display flex
+  align-items center
+  justify-content space-between
+  width 100%
+  margin-bottom 15px
+
+.error__item
+  display flex
+  align-items flex-start
+  justify-content flex-start
+
+.status__icon
+  width 10px
+  height 10px
+  background $green
+  border-radius 50%
+  margin-right 8px
+
+.text__container
+  display flex
+  align-items flex-start
+  flex-direction column
+
+.error__primary_text
+  font-weight 600
+  line-height 28px
+  font-size 16px
+  color $primary-txt
+  margin-top -7.3px
+
+.error__secondary_text
+  font-weight 600
+  line-height normal
+  font-size 12px
+  color $secondary-txt
+  
+.errors__detail
+  width 100%
+
+.errors__bar_list
+  display flex
+  align-items: center
+  justify-content flex-start
+  width 100%
+  margin-bottom 20px
+  border-radius: 2px
+  overflow hidden
+
+.errors__bar_item
+  height 8px
+  background-color $yellow
+  &:nth-child(2n)
+    background-color $purple
+  &:nth-child(3n)
+    background-color $blue
+  &:last-child
+    background-color $grey
+
+.errors__detail_list
+  display flex
+  align-items center
+  justify-content flex-start
+
+.error__detail_item
+  display flex
+  align-items: center
+  justify-content flex-start
+  margin-right 30px
+  &:nth-child(2n)
+    .error__detail_icon
+      background-color $purple
+  &:nth-child(3n)
+    .error__detail_icon
+      background-color $blue
+  &:last-child
+    .error__detail_icon
+      background-color $grey
+  span
+    font-weight 600
+    line-height normal
+    font-size 12px
+    color $primary-txt
+  .error__detail_icon
+    width 10px
+    height 10px
+    background-color $yellow
+    border-radius 2px
+    margin-right 10px
+    
+
